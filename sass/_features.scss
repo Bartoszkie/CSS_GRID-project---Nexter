@@ -1,0 +1,35 @@
+.features {
+    grid-column: center-start / center-end;
+
+    margin: 15rem 0; 
+
+    display: grid;
+    //subgrid concept - dopasowanie kolumn child grid to parent grid
+    // grid-template-columns: repeat(3, 1fr);
+    //nie definiując rows mamy implicit grid bo rowsy będą ustawione na auto (zmieścić content minimalnie)
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 6rem;
+    align-items: start;
+}
+
+
+.feature {
+
+    display: grid;
+    grid-template-columns: min-content 1fr; 
+    grid-row-gap: 1.5rem; 
+    grid-column-gap: 2.5rem;
+
+    &__icon {
+        fill: $color-primary;
+        width: 4.5rem;
+        height: 4.5rem;
+        //-1 świadczy do ostatniego EXPLICIT grid cell 
+        grid-row: 1 / span 2;
+        transform: translateY(-1rem);
+    }
+
+    &__text {
+        font-size: 1.9rem;
+    }
+}
