@@ -5,3 +5,6 @@ Projekt fikcyjnej firmy zajmującej się sprzedażą nieruchomości luksusowych 
 Strona wykonana na (osobiście ulubionej) technologii pozycjonowania elementów - CSS GRID.   
 Oczywiście niektóre komponenty zostały odpowiednio obsłużone również za pomocą Flexbox-a.\
 Użyty preprocesor CSS - Sass. Struktura projektu utrzymana w notacji BEM.
+
+# Live demo: 
+https://bartoszkie.github.io/CSS_GRID-project---Nexter/
